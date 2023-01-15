@@ -18,18 +18,11 @@ productos.forEach((product) => {
 
     content.append(comprar);
 
+    comprar.addEventListener("click", () =>{
+      carrito.push({
+        id: product.id,
+        imgage: product.image
+      })
+    })
 });
 
-
-
-
-/* const guardarProductosLS = (productos) => {
-    localStorage.setItem("productos", JSON.stringify(productos));
-  }
-  
-  const cargarProductosLS = () => {
-    return JSON.parse(localStorage.getItem("productos")) || [];
-  }
-  
-  guardarProductosLS(productos);
-   */

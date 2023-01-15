@@ -13,51 +13,80 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="col-md-6 d-flex alling-items items-center justify-content-end">
-                <a href="carrito.html" id="boton_carrito" title="Ver Carrito"></a>
+    <!-- Inicia Header -->
+    <div class="grid-container ">
+        <header>
+            <div>
+                <!-- Inicia Nav -->
+                <nav class="navbar">
+                    <a href="index.html" class="logo">
+                        <img src="" class="logo" alt="Logo Tienda">
+                    </a>
+                    <ul class="menu" id="menu">
+                        <li><a href="index.html"> Inicio </a></li>
+                        <li><a href="carrito.html"> Carrito </a></li>
+                    </ul>
+                    <div class="menu-bar" id="menu-bar">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+                <!-- End Nav -->
             </div>
+        </header>
+    </div>
+    <!-- Inicia Main -->
+    <main class="container-fluid py-3">
+        <section class="intro">
 
-        </div>
-    </header>
-    <main class="container py-3">
-        
-        <div id="shopContent" class="shop-content">
+            <div>
+            
+                <!-- Bienvenida -->
+                <div class="introText">
+                    <h4 class="text-center">Bienvenidos a la página oficial de</h4>
+                    <h1 class="text-center"> <strong>Dragon Rock </strong> </h1>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, nostrum
+                        iusto dicta nihil quidem
+                        labore illo doloribus nesciunt tenetur rerum, eos architecto repellendus velit tempora.
+                        Perspiciatis nihil velit temporibus obcaecati.</p>
+                </div>
 
-        </div>
-        <h1 id="titulo" class="text-center display-6"> Productos</h1>
-        <div class="row" id="productos">
-        </div>
+            </div>
+        </section>
+
+        </section>
+        <section class="products">
+            <div class="productos">
+                <h1 id="titulo" class="text-center display-6"> TIENDA </h1>
+                <div id="shopContent" class="row ">
+                </div>
+            </div>
+        </section>
 
     </main>
 
 
-
+    <!-- Inicia Footer -->
 
     <footer class="footer row d-flex justify-content-evenly p-3">
 
 
         <div class="containerLogos ps-5 pt-4 pb-3">
-            <a href="https://facebook.com/" rel="noopener" target="_blank"><img src="multimedia/icono/facebook.png"
-                    alt="facebook logo" class="p-1"></a>
-            <a href="https://twitter.com/" rel="noopener" target="_blank"><img src="multimedia/icono/soundcloud.png"
-                    alt="twitter logo" class="p-1"></a>
-            <a href="https://www.instagram.com/" rel="noopener" target="_blank"><img
+            <a href="https://facebook.com/" rel="noopener" target="_blank"><img width="50"
+                    src="multimedia/icono/facebook.png" width="50" alt="facebook logo" class="p-1"></a>
+            <a href="https://twitter.com/" rel="noopener" target="_blank"><img width="62"
+                    src="multimedia/icono/twitter.jpg" alt="twitter logo" class="p-1"></a>
+            <a href="https://www.instagram.com/" rel="noopener" target="_blank"><img width="50"
                     src="multimedia/icono/instagram.png" alt="instagram logo" class="p-1"></a>
-            <a href="https://www.linkedin.com/in/" rel="noopener" target="_blank"><img
-                    src="multimedia/icono/spotify.png" alt="linkedIn logo" class="p-1"></a>
-            <a href="https://github.com/" rel="noopener" target="_blank"><img src="multimedia/icono/youtube.png"
-                    alt="gitHub logo" class="p-1"></a>
+            <a href="https://www.linkedin.com/in/" rel="noopener" target="_blank"><img width="50"
+                    src="multimedia/icono/linkedin.jpg" alt="linkedIn logo" class="p-1"></a>
+            <a href="https://github.com/" rel="noopener" target="_blank"><img src="multimedia/icono/github.jpg"
+                    width="50" alt="gitHub logo" class="p-1"></a>
         </div>
 
         <div class="containerCopyright ps-5 pt-3">
             <p>Copyright © 2023 All Rights Reserved</p>
         </div>
     </footer>
-
-
-
 
     <script src="js/productos.js"></script>
     <script src="js/app.js"></script>
