@@ -28,6 +28,7 @@ const pintarCarrito = () => {
                                     <h4 class="text-center">Cantidad: ${product.cantidad}</h4>
                                     <span class="sumar"> + </span>
                                     <h4 class="text-end">Total: $${product.cantidad * product.price}</h4>
+                                    <span class="delete-product"> X </span> 
                                     `;
 
         modalContainer.append(carritoContent);
@@ -51,13 +52,12 @@ const pintarCarrito = () => {
         });
 
 
+        let eliminar = carritoContent.querySelector(".delete-product");
 
-        let eliminar = document.createElement("span");
-        eliminar.innerText = "X";
-        eliminar.className = "delete-product";
-        carritoContent.append(eliminar);
+        eliminar.addEventListener("click", () =>{
+            eliminarProducto(product.id);
+        })
 
-        eliminar.addEventListener("click", eliminarProducto)
 
     });
 
@@ -71,8 +71,8 @@ const pintarCarrito = () => {
 
 verCarrito.addEventListener("click", pintarCarrito);
 
-const eliminarProducto = () => {
-    const foundId = carrito.find((element) => element.id);
+const eliminarProducto = (id) => {
+    const foundId = carrito.find((element) => element.id === id);
 
     carrito = carrito.filter((carritoId) => {
         return carritoId !== foundId;
